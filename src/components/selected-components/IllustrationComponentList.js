@@ -2,9 +2,9 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Loader } from "../../Loader/Loader";
 import { CardItem } from "./CardItem";
-import "./cards.scss";
+import "..main/main.scss";
 
-export const CardList = () => {
+export const IllustrationCardList = () => {
   const [images, setImges] = useState([]);
   const [areImagessExpanded, setImagesExpand] = useState(false);
 

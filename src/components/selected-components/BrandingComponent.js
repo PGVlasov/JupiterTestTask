@@ -1,13 +1,13 @@
-import { CardList } from "../cards/CatdList";
 import { BodyNavigation } from "./BodyNavigation";
-import "./main.scss";
+import "..main/main.scss";
+import { BrendingCardList } from "./BrandingComponentList";
 
-export const MainComponent = () => {
+export const BrandingComponent = () => {
   return (
     <div className="main">
       <div className="main-container">
         <BodyNavigation />
-        <CardList />
+        <BrendingCardList />
       </div>
     </div>
   );

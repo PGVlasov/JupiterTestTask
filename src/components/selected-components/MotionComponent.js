@@ -1,13 +1,13 @@
-import { CardList } from "../cards/CatdList";
 import { BodyNavigation } from "./BodyNavigation";
-import "./main.scss";
+import "..main/main.scss";
+import { MotionCardList } from "./MotionCoomponentList";
 
-export const MainComponent = () => {
+export const MotionComponent = () => {
   return (
     <div className="main">
       <div className="main-container">
         <BodyNavigation />
-        <CardList />
+        <MotionCardList />
       </div>
     </div>
   );
