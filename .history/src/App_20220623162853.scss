@@ -1,0 +1,17 @@
+@import "./styles/vars.scss";
+
+.main {
+  margin: 0;
+}
+
+.app {
+  font-family: "Epilogue";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $white;
+}
+
+.page {
+  overflow: hidden;
+}
