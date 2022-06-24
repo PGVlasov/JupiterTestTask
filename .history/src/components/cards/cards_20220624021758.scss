@@ -1,0 +1,129 @@
+@import "../../styles/vars.scss";
+@import "../../styles/mixins.scss";
+
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.all-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  @include breakpoint($mobile-bp) {
+    grid-template-columns: 1fr;
+  }
+  row-gap: 13px;
+}
+.card-list-button {
+  width: 170px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $black;
+  cursor: pointer;
+  background-color: inherit;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.16);
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.16);
+  margin-top: 10px;
+  padding: 14px 39px;
+  transition: all 0.2s linear;
+  &:hover {
+    background-color: #0e0e10;
+    color: $white;
+  }
+}
+span {
+  color: $black;
+}
+
+// card {
+//     color: $brown;
+//   }
+
+.card-item-cliced {
+  position: relative;
+  border: 1px solid #367d27;
+
+  .card--btn-border {
+    background: none;
+    border: none;
+  }
+
+  img {
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+  }
+
+  .card-batton {
+    position: absolute;
+    border: 1px solid #707070;
+    border-radius: 16px;
+    background-color: $white;
+    padding: 8px 16px;
+    cursor: pointer;
+    bottom: 140px;
+    left: 70px;
+    z-index: 1;
+  }
+
+  .card-name {
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    bottom: 30px;
+    left: 70px;
+    z-index: 1;
+  }
+}
+
+.card-item {
+  position: relative;
+  //   margin: 0 30px 30px 0;
+
+  .card--btn-border {
+    background: none;
+    border: none;
+  }
+
+  img {
+    max-width: 270px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: all 0.2s linear;
+  }
+
+  .card-batton {
+    position: absolute;
+    border: 1px solid #707070;
+    border-radius: 16px;
+    background-color: $white;
+    padding: 8px 16px;
+    cursor: pointer;
+    bottom: 140px;
+    left: 70px;
+    z-index: 1;
+  }
+
+  .card-name {
+    position: absolute;
+    font-size: 30px;
+    color: #ffffff;
+    bottom: 30px;
+    left: 70px;
+    z-index: 1;
+  }
+}
